@@ -21,9 +21,10 @@ print(score2)
 
 score3 = input("Nuevo typo de animal" +  "?")
 class Zoologico:
-	def __init__(self, nombre, tipo):
+	def __init__(self, nombre, tipo,clasificacion):
 		self.nombre = nombre
 		self.tipo = tipo
+                self.tipo = clasificacion
 
 	def set_brand(self,tipo):
 		self.tipo = tipo
@@ -33,7 +34,7 @@ class Zoologico:
 		print ("El tipo de animal actual es " + self.tipo)
 
 def main():
-	zoo = Zoologico("n","x")
+	zoo = Zoologico("n","x","y")
 	zoo.set_tipo(score3)
 	zoo.get_tipo()
 
